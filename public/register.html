@@ -40,7 +40,7 @@
             <img src="images/user_icon2.png" alt="">
             <h1>Sign Up Now!</h1>
            
-
+<!--
             <form method="POST" action="/register">
                 <input type="text" class="input-box" id="FullName" placeholder="Full Name">
                 <input type="email" class="input-box" id="email" placeholder="Your Email">
@@ -55,6 +55,18 @@
                 <p>Already have an account? <a href="login.html"><br>Login</a></p>
                 
             </form>
+        -->
+        <!-- register.html -->
+                <form action="/register" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" class="input-box" name="email" id="email" required>
+                
+                    <label for="password">Password:</label>
+                    <input type="password" class="input-box" name="password" id="password" required>
+                
+                    <button type="submit" class="sign_up-btn">Register</button>
+                </form>
+  
         </div>
     </section>
 
