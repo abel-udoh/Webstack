@@ -1,13 +1,24 @@
 // routes.js
 const express = require('express');
+const bodyParser = require('body-parser');
 const router = express.Router();
+const path = require('path');
 const { check, validationResult } = require('express-validator');
-const UserController = require('./controllers/UserController');
+const UserController = require('../controllers/UserController');
 
 
 router.get('/', (req, res) => {
-  res.send('Welcome to the user authentication system!');
+  res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
+
+router.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'register.html'));
+});
+
+router.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'login.html'));
+});
+
 
 router.post('/register', [
   check('email').isEmail().withMessage('Invalid email'),

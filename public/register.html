@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KacMart Store</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ejs/3.1.6/ejs.min.js"></script>
+    <script>
+        console.log("EJS Script loaded successfully");
+    </script>
+    
+
+</head>
+
+<body>
+    <section id ="header">
+        <a href="#"><img src="images/kacmart logo.png" class="logo" alt="KacMart logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i><a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="register_form">
+            <img src="images/user_icon2.png" alt="">
+            <h1>Sign Up Now!</h1>
+           
+
+            <form method="POST" action="/register">
+                <input type="text" class="input-box" id="FullName" placeholder="Full Name">
+                <input type="email" class="input-box" id="email" placeholder="Your Email">
+                <input type="password" class="input-box" id="password" placeholder="Your Password">
+                <input type="password" class="input-box" id="ConfirmationPassword" placeholder="Confirm Password">
+                <p><span><input type="checkbox"></span>I agree to the terms of services</p>
+                <button type="button" class="sign_up-btn">Sign Up</button>
+
+                <hr>
+                <p class="or">OR</p>
+                <button type="button" class="google-btn">Login with 🇬oogle</button>
+                <p>Already have an account? <a href="login.html"><br>Login</a></p>
+                
+            </form>
+        </div>
+    </section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

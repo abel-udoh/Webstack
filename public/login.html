@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KacMart Store</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <section id ="header">
+        <a href="#"><img src="images/kacmart logo.png" class="logo" alt="KacMart logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="login.html"><em>Login</em></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i><a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="login">
+        <div class="login-form">
+            <img src="images/user_icon2.png" alt="">
+            <h1>Sign In!</h1>
+            <form method="POST" action="/login" class="login-form">
+                <input type="email" class="input-box" placeholder="Your Email">
+                <input type="password" class="input-box" placeholder="Your Password">
+                <button type="button" class="login-form-btn">Login</button>
+                <p>Don't have an account? <a href="register.html"><br>Register</a></p>
+                
+            </form>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+  
+</body>
+</html>

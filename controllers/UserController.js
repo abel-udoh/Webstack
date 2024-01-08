@@ -1,7 +1,7 @@
 // controllers/UserController.js
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
-const User = require('./models/Users');
+const User = require('../models/Users');
 
 const UserController = {
   register: async (req, res) => {

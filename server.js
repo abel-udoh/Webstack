@@ -1,26 +1,33 @@
-// server.js
 require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const crypto = require('crypto');
+const path = require('path');
 const { connectToDatabase, closeDatabaseConnection } = require('./db');
 const routes = require('./Routes/routes');
-
-dotenv.config();
-
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+const secretKey = crypto.randomBytes(32).toString('hex');
 app.use(session({
-  secret: process.env.SESSION_SECRET,
+  secret: secretKey,
   resave: false,
   saveUninitialized: false
 }));
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes); // Use your routes module
+connectToDatabase()
+  .then(() => {
+    app.use('/', routes);
 
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
-});
+    app.listen(3000, () => {
+      console.log('Server started on port 3000');
+    });
+  })
+  .catch(err => {
+    console.error("Error connecting to MongoDB Atlas:", err);
+  });
