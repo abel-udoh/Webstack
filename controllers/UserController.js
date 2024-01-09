@@ -1,7 +1,7 @@
-// controllers/UserController.js
+const { insertUser, findUserByEmail } = require('../models/Users');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
-const User = require('../models/Users');
+const { closeDatabaseConnection } = require('../db');
 
 const UserController = {
   register: async (req, res) => {
@@ -14,8 +14,7 @@ const UserController = {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     try {
-      const newUser = new User({ email, password: hashedPassword });
-      await newUser.save();
+      await insertUser(email, hashedPassword);
       res.send('User registered successfully');
     } catch (error) {
       console.error('Error registering user:', error);
@@ -27,7 +26,7 @@ const UserController = {
     const { email, password } = req.body;
 
     try {
-      const user = await User.findOne({ email });
+      const user = await findUserByEmail(email);
 
       if (!user) {
         return res.send('Invalid email or password');

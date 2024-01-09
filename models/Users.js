@@ -14,7 +14,7 @@ module.exports = User;
 const { connectToDatabase } = require('../db');
 
 async function insertUser(email, password) {
-  const { client, collection } = await connectToDatabase();
+  const { collection } = await connectToDatabase();
 
   try {
     const user = {
@@ -25,8 +25,12 @@ async function insertUser(email, password) {
     const result = await collection.insertOne(user);
     console.log(`User inserted with ID: ${result.insertedId}`);
   } finally {
-    await client.close();
   }
 }
 
-module.exports = { insertUser };
+  async function findUserByEmail(email) {
+    const { collection } = await connectToDatabase();
+    return collection.findOne({ email });
+  }
+
+  module.exports = { insertUser, findUserByEmail };
