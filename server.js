@@ -17,10 +17,6 @@ app.use(session({
   saveUninitialized: false
 }));
 
-// Configure Express to use HTML as the view engine
-//app.engine('html', require('ejs').renderFile);
-//app.set('view engine', 'html');
-
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
