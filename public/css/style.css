@@ -1294,12 +1294,14 @@ nav ul li {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(public/images/small\ banner\ 7.jpg);
+  background-image: url(/images/small\ banner\ 7.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
   width: 100%;
-  }
+  height: 100%;
+
+}
 
 #register .register_form {
   width: 300px;
@@ -1351,12 +1353,14 @@ nav ul li {
 #register .register_form a {
   text-decoration: none;
 }
+
 #register .register_form hr {
   margin-top: 20px;
   width: 100%;
 }
 #register .register_form .or {
   background: #fff;
+  color: #000;
   width: 30px;
   margin: -19px auto 10px;
 
@@ -1377,21 +1381,26 @@ nav ul li {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url(/public/images/small\ banner\ 7.jpg);
+  background-image: url(/images/small\ banner\ 7.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
+
+
 #login .login-form {
   width: 300px;
-  /*box-shadow: 0 0 3px 0 rgba(0,0,0,3);*/
+  box-shadow: 0 0 3px 0 rgba(0,0,0,3);
   background: #fff;
   padding: 10px;
   margin: 8% auto 0;
   text-align: center;
 }
+
+
 #login .login-form h1{
   font-size: 30px;
   margin-bottom: 20px;
