@@ -483,7 +483,7 @@ footer .copyright{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/public/images/Homebanner\ 2.jpg);
+  background-image: url(/images/Homebanner\ 2.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -523,7 +523,7 @@ footer .copyright{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(/public/images/small-banner\ 3.jpg);
+  background-image: url(/images/small-banner\ 3.jpg);
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -532,7 +532,7 @@ footer .copyright{
 }
 
 #small-banner .banner-box2 {
-  background-image: url(/public/images/small\ banner\ 4.jpg);
+  background-image: url(/images/small\ banner\ 4.jpg);
 }
 
 #small-banner .banner-box2 h5 {
@@ -585,7 +585,7 @@ footer .copyright{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(/public/images/small\ banner\ 7.jpg);
+  background-image: url(/images/small\ banner\ 7.jpg);
   min-width: 30px;
   height: 30vh;
   background-size: cover;
@@ -612,11 +612,11 @@ footer .copyright{
 }
 
 #banner3 .image2 {
-  background-image: url(/public/images/small\ banner\ 10.jpg);
+  background-image: url(/images/small\ banner\ 10.jpg);
 }
 
 #banner3 .image3 {
-  background-image: url(/public/images/small\ banner\ 9.jpg);
+  background-image: url(/images/small\ banner\ 9.jpg);
 }
 
 #Newsletter {
@@ -624,7 +624,7 @@ footer .copyright{
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(/public/images/homebanner\ 6.png);
+  background-image: url(/images/homebanner\ 6.png);
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #0d0e0d;
