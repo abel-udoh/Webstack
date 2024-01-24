@@ -585,7 +585,7 @@ footer .copyright{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(images/small\ banner\ 7.jpg);
+  background-image: url(/images/small\ banner\ 7.jpg);
   min-width: 30px;
   height: 30vh;
   background-size: cover;
@@ -612,11 +612,11 @@ footer .copyright{
 }
 
 #banner3 .image2 {
-  background-image: url(images/small\ banner\ 10.jpg);
+  background-image: url(/public/images/small\ banner\ 10.jpg);
 }
 
 #banner3 .image3 {
-  background-image: url(images/small\ banner\ 9.jpg);
+  background-image: url(/public/images/small\ banner\ 9.jpg);
 }
 
 #Newsletter {
