@@ -5,7 +5,7 @@
 Welcome to the KacMart Store, a web-based e-commerce platform developed as a part of our software engineering program with ALX.
 This project showcases a fully functional online shopping experience, built with HTML, CSS, and JavaScript.
 
-- Deployed Site: KacMart Store (https://webstack-145cc2b77cc0.herokuapp.com/)
+- Deployed Site: KacMart Store (https://webstack-indol.vercel.app/)
 - Project Landing Page : (https://mailchi.mp/edf2daaf4ca1/kacmart-store)
 - Final Project Blog Article: (https://medium.com/@abeludoh/development-of-a-functional-e-commerce-website-128f16ef8696)
 - Author(s) LinkedIn:
